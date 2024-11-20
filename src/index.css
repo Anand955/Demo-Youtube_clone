@@ -3,3 +3,66 @@
   margin: 0;
   box-sizing: 0;
 }
+body,html{
+  width: 100%;
+  height: 100vh;
+}
+
+.nav_left{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  z-index: 10;
+}
+.nav_left img:first-child{
+   width: 25px;
+   height: 25px;
+}
+.nav_left img:nth-child(2){
+   width: 150px;
+}
+.nav_right img:nth-child(4){
+  width: 50px;
+  border-radius: 50%;
+}
+.nav_right img{
+  width: 30px;
+  margin-right: 8px;
+}
+.nav_right{
+  display: flex;
+  align-items: center;
+}
+.serach_input input{
+  border-radius: 50px;
+  padding: 6px 11px;
+  height: 25px;
+  width: 500px;
+  outline: 0;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.serach_input::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  background-image: url('./assets/search.png');
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  right:10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.serach_input{
+  position: relative;
+}
