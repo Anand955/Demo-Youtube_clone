@@ -6,12 +6,19 @@ import more from '../assets/more.png'
 import notification from '../assets/notification.png'
 import jack from '../assets/jack.png'
 
-const Navbar = () => {
+const Navbar = ({setSidebar}) => {
   return (
     <>
       <nav>
         <div className="nav_left">
-            <img src={menu} alt="" />
+          <div onClick={()=> setSidebar(prev => !prev)}>
+          <img 
+            className="w-8 cursor-pointer" 
+            src={menu} 
+            alt="Toggle sidebar" 
+          />
+          </div>
+        
             <img src={logo} alt="" />
         </div>
         <div className="nav_center">
